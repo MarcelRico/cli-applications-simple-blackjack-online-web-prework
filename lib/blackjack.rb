@@ -15,7 +15,7 @@ def prompt_user
 end
 
 def get_user_input
-  user_input = gets.to_s
+  user_input = gets()
   pp user_input
 end
 
