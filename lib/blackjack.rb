@@ -57,8 +57,10 @@ end
 #####################################################
 
 def runner
-  welcome()
-  card_total = initial_round
-  hit?(card_total)
+  exit_game = false
+  until exit_game = true
+    welcome()
+    card_total = initial_round
+    hit?(card_total)
 end
     
