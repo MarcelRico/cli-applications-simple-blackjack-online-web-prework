@@ -55,8 +55,8 @@ end
 #####################################################
 
 def runner
-  done? = false
-  until done? == true do 
+  done = false
+  until done == true do 
     welcome
     card_total = initial_round
     prompt_user
@@ -64,7 +64,7 @@ def runner
     hit?(card_total)
     if(user_input > 21)
       end_game(card_total)
-      done? = true
+      done = true
     end
   end
   
