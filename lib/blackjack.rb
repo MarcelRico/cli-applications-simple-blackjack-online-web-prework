@@ -57,7 +57,7 @@ end
 
 def runner
   done = false
-  until done == true do 
+  until (done == true) do 
     welcome
     card_total = initial_round
     prompt_user
