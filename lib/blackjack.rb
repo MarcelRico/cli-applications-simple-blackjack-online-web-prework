@@ -58,14 +58,7 @@ end
 def runner
   welcome
   done = false
-  until (done == true) do 
-    card_total = initial_round
-    hit?(card_total)
-    if(card_total > 21)
-      end_game(card_total)
-      done = true
-    end
-  end
+
   
 end
     
