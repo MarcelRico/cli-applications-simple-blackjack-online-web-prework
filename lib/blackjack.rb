@@ -56,9 +56,9 @@ end
 #####################################################
 
 def runner
+  welcome
   done = false
   until (done == true) do 
-    welcome
     card_total = initial_round
     hit?(card_total)
     if(card_total > 21)
