@@ -66,7 +66,6 @@ def runner
       end_game(card_total)
       exit_game = true
     end
-    display_card_total(card_total)
   end
   
 end
