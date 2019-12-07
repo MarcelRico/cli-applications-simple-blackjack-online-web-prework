@@ -66,6 +66,7 @@ def runner
       end_game(card_total)
       done = true
     end
+    puts "hello"
   end
   
 end
