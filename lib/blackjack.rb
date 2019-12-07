@@ -12,7 +12,6 @@ end
 
 def prompt_user
   puts "Type 'h' to hit or 's' to stay"
-  gets
 end
 
 def get_user_input
