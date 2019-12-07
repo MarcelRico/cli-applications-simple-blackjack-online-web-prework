@@ -56,7 +56,7 @@ end
 #####################################################
 
 def runner
-  welcome
-  done = false
+  welcome()
+
 end
     
