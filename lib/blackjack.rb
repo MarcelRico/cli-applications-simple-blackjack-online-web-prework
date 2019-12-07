@@ -39,7 +39,7 @@ def hit?(card_total)
     card_total += deal_card
     display_card_total(card_total)
   elsif(user_input =='s')
-  
+    return card_total
   else
     invalid_command
     prompt_user
@@ -58,9 +58,14 @@ end
 
 def runner
   exit_game = false
+  welcome
+  card_total = initial_round
+  
   until exit_game = true
-    welcome()
-    card_total = initial_round
-    hit?(card_total)
+    card_total = hit?(card_total)
+    if(card_total > 21) 
+      exit_game = true
+    end
+  end
 end
     
