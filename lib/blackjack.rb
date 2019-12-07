@@ -58,10 +58,12 @@ def runner
   done? = false
   until done? == true do 
     welcome
-    initial_round
+    card_total = initial_round
     prompt_user
     user_input = get_user_input
-    
+    if(user_input > 21)
+      end_game(card_total)
+    end
   end
   
 end
