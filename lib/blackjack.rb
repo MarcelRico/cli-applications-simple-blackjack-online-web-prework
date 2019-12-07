@@ -55,6 +55,14 @@ end
 #####################################################
 
 def runner
+  done? = false
+  until done? == true do 
+    welcome
+    initial_round
+    prompt_user
+    user_input = get_user_input
+    
+  end
   
 end
     
