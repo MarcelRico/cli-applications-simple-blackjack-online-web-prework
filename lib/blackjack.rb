@@ -1,5 +1,3 @@
-require 'pry'
-
 def welcome
   puts "Welcome to the Blackjack Table"
 end
@@ -28,7 +26,6 @@ def initial_round
   card_total = 0
   2.times do 
     card_total += deal_card()
-    binding.pry
   end
   display_card_total(card_total)
 end
