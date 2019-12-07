@@ -64,6 +64,7 @@ def runner
     hit?(card_total)
     if(user_input > 21)
       end_game(card_total)
+      done? = true
     end
   end
   
